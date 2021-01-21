@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	model "github.com/gotests/models"
-	"github.com/gotests/variatic"
+	model "github.com/gotrials/models"
+	"github.com/gotrials/variatic"
 )
 
 // set a global constant

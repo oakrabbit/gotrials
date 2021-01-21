@@ -2,7 +2,7 @@ package variatic
 
 import (
 	"fmt"
-	model "github.com/gotests/models"
+	model "github.com/gotrials/models"
 )
 
 func Printusers(users ...*model.User) {

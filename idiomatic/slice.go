@@ -1,4 +1,4 @@
-package slice
+package idiomatic
 
 import "fmt"
 
@@ -46,4 +46,24 @@ func ManipulateReslice() {
 	fmt.Println("Sub Slice after value change", nslice)
 	fmt.Println("Orginal Slice varible", slice)
 
+}
+
+func preppendSlice(a []int, b []int) []int {
+	out := append(b[:], a[:]...)
+	return out
+}
+
+func cutSlice(in []int, start int, end int) []int {
+	// Just set end as the len of the slice. and cut to the end
+	if start >= end {
+		end = len(in)
+	}
+
+	in = append(in[:(start-1)], in[end:]...)
+	return in
+}
+
+func deleteSliceItem(in []int, index int) []int {
+	in = append(in[:index-1], in[index:]...)
+	return in
 }

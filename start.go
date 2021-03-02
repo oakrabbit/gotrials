@@ -4,13 +4,17 @@ import (
 	"fmt"
 	model "github.com/gotrials/models"
 	"github.com/gotrials/variatic"
+	"github.com/gotrials/cmd"
 )
 
 // set a global constant
 const Host string = "localhost"
 
 func main() {
-	fmt.Println("vim-go")
+
+	cmd.Execute()
+
+	//stuff to delete
 
 	// create new user struct
 	// method 1:

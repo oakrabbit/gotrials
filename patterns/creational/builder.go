@@ -49,7 +49,7 @@ func (u *UserBuilder) Build() User{
 	return *u.user
 }
 
-func main() {
+func dev() {
 	fmt.Println("builder pattern")
 	user := NewUser().
 		Name("alex").
